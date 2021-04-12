@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Projet </title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+<body>
+    <div class="form" id="newElementForm"></div>
+    <div class="form" id="reviewForm"></div>
+    <div class="mainContainer">
+        <h1>Avis de Restaurants</h1>
+        <div id="mapContainer"></div>
+        <div id="filtersContainer">
+            <p class="filterElement texts">Afficher les restaurants entre </p>
+            <select class="filterElement selector" id="minFilter">
+                <option class="minFilterOption" value="1" selected="selected" > 1 étoile </option>
+                <option class="minFilterOption" value="2"> 2 étoiles </option>
+                <option class="minFilterOption" value="3"> 3 étoiles </option>
+                <option class="minFilterOption" value="4"> 4 étoiles </option>
+                <option class="minFilterOption" value="5"> 5 étoiles </option>
+            </select>
+            <p class="filterElement texts"> et </p>
+            <select class="filterElement selector" id="maxFilter">
+                <option class="maxFilterOption" value="1"> 1 étoile </option>
+                <option class="maxFilterOption" value="2"> 2 étoiles </option>
+                <option class="maxFilterOption" value="3"> 3 étoiles </option>
+                <option class="maxFilterOption" value="4"> 4 étoiles </option>
+                <option class="maxFilterOption" value="5" selected="selected" > 5 étoiles </option>
+            </select>
+        </div>
+        <div id="restaurantListContainer">
+            <div id="restaurantList"></div>
+        </div>
+        <div id="restaurantClickedContainer">
+        </div>
+    </div>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCCE5f7uZZIOugk3bPODVSZW2pEL1z05A4&libraries=places"></script>
+    <script type="module" src="js/init.js"></script>
+</body>
+</html>

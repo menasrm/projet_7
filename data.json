@@ -1,0 +1,74 @@
+[
+    { 
+       "restaurantName":"test Tacos night2",
+       "address":"134 Boulevard Flamenq, 83200 Toulon",
+       "lat":43.13266356989931,
+       "long":5.914211436351021,
+       "ratings":[
+          {
+             "stars":4,
+             "comment":"Trop bon."
+          },
+          {
+             "stars":5,
+             "comment":"INCROYABLE !"
+          }
+       ],
+       "averageRating": "",
+       "id": null
+    },
+    {
+      "restaurantName":"test Allo Avanti Pizza",
+      "address":"398 Boulevard Louis Picon, 83000 Toulon",
+      "lat":43.132938141260425,
+      "long":5.912934682804165,   
+      "ratings":[
+         {
+            "stars":5,
+            "comment":"La pizza était tres tres bonne"
+         },
+         {
+            "stars":4,
+            "comment":"La pizza était conforme à mes attentes"
+         }
+      ],
+       "averageRating": "",
+       "id": null
+    },
+    {
+      "restaurantName":"test La Mamma",
+      "address":"239 Avenue Dr Fontan, 83200 Toulon",
+      "lat":43.13208795417248,   
+      "long":5.9187335090834825,
+      "ratings":[
+         {
+            "stars":4,
+            "comment":"Très bonne accueil une pizza excellente, un peu d'attente quand meme"
+         },
+         {
+            "stars":5,
+            "comment":"Cette pizza m'a rappelé le gout de l'Italie !"
+         }
+      ],
+       "averageRating": "",
+       "id": null
+    },
+    {
+      "restaurantName":"test Tacos City",
+      "address":"51 Rue d'Isly, 83200 Toulon",
+      "lat":43.129200070653994,   
+      "long":5.91473981164064,
+      "ratings":[
+         {
+            "stars":2,
+            "comment":"Un tacos pas très bon"
+         },
+         {
+            "stars":3,
+            "comment":"J'ai trouvé ça correct, sans plus"
+         }
+      ],
+       "averageRating": "",
+       "id": null
+    }
+]

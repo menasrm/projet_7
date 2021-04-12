@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap');
+
+html, body {
+  height: 100% ;
+  margin: 0px 0px 0px 0px ;
+  padding: 0px 0px 0px 0px ;
+  width: 100% ;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+h4 {
+  margin: 0px;
+  line-height:2px;
+}
+
+.restaurant {
+  padding: 5px 15px;
+}
+
+#line {
+  width :auto; 
+}
+
+textarea {
+  height: 100px;
+}
+
+.mainContainer {
+  display: grid;
+  grid-gap: 15px;
+  height: 100%;
+  margin: 0;
+}
+
+h1 {
+  grid-column: 1;
+  grid-row: 1;  
+  text-align: center; 
+}
+
+#filtersContainer {
+  padding: 10px 0px;
+  text-align: center; 
+  background-color: rgb(241, 244, 247);
+  box-shadow: 5px 5px 5px rgb(184, 184, 184);
+}
+
+#mapContainer {
+  width: auto;
+  height: auto; 
+  margin: 0px
+}
+
+#restaurantListContainer {
+  color: white;
+  text-align: left;
+  overflow-y: scroll;
+  background-color: #6990fd;
+  box-shadow: 5px 5px 5px rgb(188, 187, 187);
+  padding:20px;
+}
+
+#restaurantClickedContainer {
+  color: black; 
+  background-color: rgb(241, 244, 247);
+  overflow-y: scroll;
+  box-shadow: 5px 0px 5px rgb(216, 215, 215);
+  padding:20px;
+  text-align: center;
+}
+
+/* GRID LAPTOP */
+@media screen and (min-width: 769px) {
+    .mainContainer {
+    grid-template-columns: 40% auto ;
+    grid-template-rows: 80px auto 50%;
+  }
+
+  #filtersContainer {
+    grid-column: 2;
+    grid-row: 1;  
+  }
+
+  #mapContainer {
+    grid-column: 2;
+    grid-row: 2/4;  
+  }
+
+  #restaurantListContainer {
+    grid-column: 1;
+    grid-row: 2;  
+  }
+
+  #restaurantClickedContainer {
+    grid-column: 1;
+    grid-row: 3;  
+  }
+}
+
+/* GRID TABLET AND MOBILE */
+@media screen and (max-width: 768px) {
+  .mainContainer {
+    grid-template-columns: 100% ;
+    grid-template-rows: 50px auto 450px 200px 300px;
+  }
+
+  h1 {
+    grid-column: 1;
+    grid-row: 1;  
+  }
+
+  #filtersContainer {
+    grid-column: 1;
+    grid-row: 2;  
+  }
+
+  #mapContainer {
+    grid-column: 1;
+    grid-row: 3;  
+  }
+
+  #restaurantListContainer {
+    grid-column: 1;
+    grid-row: 4;  
+  }
+
+  #restaurantClickedContainer {
+    grid-column: 1;
+    grid-row: 5;  
+  }
+}
+
+/* CLICKED RESTAURANT */ 
+#clickedRestaurantNameAndAverage {
+  text-align: center;
+}
+
+#clickedRestaurantImg {
+  margin: auto;
+}
+
+.clickedRestaurantaddReview {
+  background-color: #6990fd;
+  color: white;
+  padding: 15px 25px;
+  margin: auto;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  font-size: 15px;
+  font-weight: bold;
+  box-sizing: border-box;
+  box-shadow: 0 1px 0 1px rgba(0,0,0,.04);
+  border-radius: .5em;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+/* FILTERS */ 
+.filterElement{
+  display: inline-block;
+  padding: 20px 10px;
+  margin: 0px;
+
+}
+
+.selector, .button {
+  font-size: 14px;
+  font-weight: 700;
+  color: #444;
+  line-height: 1.3;
+  padding: .6em 2.4em .5em .8em;
+  width: auto;
+  max-width: 100%;
+  box-sizing: border-box;
+  margin: 0;
+  border: 1px solid #aaa;
+  box-shadow: 0 1px 0 1px rgba(0,0,0,.04);
+  border-radius: .5em;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: #fff;
+}
+
+.selector {
+  background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23007CB2%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E'),
+  linear-gradient(to bottom, #ffffff 0%,#e5e5e5 100%);
+  background-repeat: no-repeat, repeat;
+  background-position: right .7em top 50%, 0 0;
+  background-size: .65em auto, 100%;
+}
+
+.button {
+  margin-top: 0px;
+  margin-bottom: 20px;
+  padding: 10px 15px;
+}
+
+/* FORMS */ 
+.notesContainer {
+  display: block;
+  margin-top: 8px;
+}
+
+.notes {
+  display: inline-block;
+}
+
+#newElementForm, #reviewForm {
+  text-align: center;
+  position: fixed;
+  right: 15px;
+  bottom: 5px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+
+.newElementForm-container, .reviewForm-container {
+  max-width: 400px;
+  padding: 20px;
+  background-color: white;
+}
+
+.newElementForm-container input, .reviewForm-container input, textarea {
+  width: 90%;
+  padding: 15px;
+  margin: 8px 0 15px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+.newElementForm-container input:focus, .reviewForm-container input:focus , textarea:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+.newElementForm-container .button, .reviewForm-container .button {
+  background-color: #6990fd;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.newElementForm-container .button:hover, .reviewForm-container .button:hover {
+  opacity: 1;
+}
